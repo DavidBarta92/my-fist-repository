@@ -1,0 +1,29 @@
+body{
+    background-color: fuchsia;
+    display: flex;
+    padding: 0%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: inline-flex;
+    padding: 0%;
+    background-color: brown;
+}
+.button{
+    display: flex;
+    padding: 3%;
+    justify-content: center;
+    align-items: center;
+    background-color: chartreuse;
+}
+.picture{
+    background-color: cornflowerblue;
+}
+.class{
+    background-color: cyan;
+}
+#right{
+    transform: rotate(0.5turn);
+}
