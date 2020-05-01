@@ -7,6 +7,8 @@ body{
 }
 
 .container{
+    width: 850px;
+    height: 300px;
     display: inline-flex;
     padding: 0%;
     background-color: brown;
