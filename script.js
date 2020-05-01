@@ -2,49 +2,31 @@ $(document).ready(function(){
 
   let image1 = {
       photo: "images/1.jpg",
-      title: "My title 1",
-      description: "My description",
+      title: "EuroRoute Bridge",
+      description: "between Britain and France",
   };
   let image2 = {
-      photo: "images/2.png",
-      title: "My title 2",
-      description: "My description",
+      photo: "images/2.jpg",
+      title: "Hudson River Bridge",
+      description: "New York, USA",
   };
   let image3 = {
       photo: "images/3.jpg",
-      title: "My title 3",
-      description: "My description",
+      title: "General Ulysses S. Grant Memorial Bridge",
+      description: "Washington DC",
   };
   let image4 = {
       photo: "images/4.jpg",
-      title: "My title 4",
-      description: "My description",
+      title: "Kerch Strait Bridge",
+      description: "between Crimea and Russia",
   };
-  let image5 = {
-      photo: "images/5.jpg",
-      title: "My title 5",
-      description: "My description",
-  };
-   let image6 = {
-      photo: "images/6.png",
-      title: "My title 6",
-      description: "My description",
-  }; 
-  let image7 = {
-      photo: "images/7.png",
-      title: "My title 7",
-      description: "My description",
-  }; 
   
-  let imagesData = [image1, image2, image3, image4, image5, image6, image7];
+  let imagesData = [image1, image2, image3, image4];
   let dataSize = imagesData.length;    
 
-// Number + Arrows + addBigImage
   let currentNum = 0;
 
   let loadCurrentNum = (Number) => {
-      //$("#current-num").text(Number);
-     // $("#current-num").css('background', 'rgb(180, 70, 70)');
   }
 
   $('.previous').click(() => {
@@ -75,17 +57,15 @@ $(document).ready(function(){
           (`
                   <img class = "mainPic" src="${imagesData[curNum].photo}">
                   <div id = "grayContainer">
-                      <h1 id="photoTitle">${imagesData[curNum].title.trim()}</h1>
+                      <h2 id="photoTitle">${imagesData[curNum].title.trim()}</h2>
                       <p id="photoDescription">${imagesData[curNum].description.trim()}</p>
                   </div>
               `)
   }
 
-//Thumbnails section
-
   imagesData.forEach((img) => {
       $('#thumbnails').append('<div class="thumbsContainer"><img class="smallBox" src="' + img.photo + '"><div class="popUpText">' + img.title + '</div></div>');
-    $('.smallBox').css('border-radius', '5px');
+    $('.smallBox').css('border-radius', '100%');
   });
 
   $('#thumbnails').on('click', '.smallBox', function () {

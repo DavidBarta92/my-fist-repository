@@ -1,31 +1,77 @@
 body{
-    background-color: fuchsia;
+    background-color: bisque;
+    display: block;
+    padding: 0%;
+}
+.content{
+    background-color: bisque;
     display: flex;
     padding: 0%;
     align-items: center;
     justify-content: center;
 }
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin: 20px;
 
-.container{
-    width: 850px;
-    height: 300px;
+    color: darkslategray;
+}
+h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-left: 5px;
+    color: bisque;
+}
+p, div{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    margin-left: 5px;
+    color: bisque;
+}
+#container{
     display: inline-flex;
     padding: 0%;
-    background-color: brown;
+    margin: 20px;
+    background-color: darkslategray;
 }
-.button{
+.next, .previous{
     display: flex;
     padding: 3%;
     justify-content: center;
     align-items: center;
-    background-color: chartreuse;
-}
-.picture{
-    background-color: cornflowerblue;
-}
-.class{
-    background-color: cyan;
+    background-color: burlywood;
+    width: 10px;
 }
 #right{
     transform: rotate(0.5turn);
+}
+.mainPic{
+    width: 600;
+    height: 400;
+}
+.smallBox{
+    width: 80;
+    height: 80;
+    margin: 10px;
+}
+.smallBox:hover{
+    transition-duration: 0.4s;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.smallBox:hover + .popUpText{
+    visibility: visible;
+}
+.popUpText{
+    color: darkslategray;
+    font-family: 'Roboto', sans-serif;
+    visibility: hidden;
+    display: flex;
+    padding: 0%;
+    align-items: center;
+    justify-content: center;
+}
+.thumbsContainer{
+    display: flex;
 }
